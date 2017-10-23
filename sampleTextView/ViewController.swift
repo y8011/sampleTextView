@@ -28,7 +28,9 @@ class ViewController: UIViewController {
     
         //TextViewを常に中央寄せ
         myTextView.center = self.view.center
+        myTextView.sizeToFit()
         
+        print(myTextView.text)
     }
 
     @IBAction func tapClose(_ sender: UIButton) {
